@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <title>Drink & Snack</title>
+  <meta charset="utf-8">
+  <style>
+    /*==style co ban cho wed==*/
+    *{ box-sizing: border-box;
+      -moz-box-sizzing: border-box;
+      -webkit-box-sizzing:border-box; }
+    body{
+      font-family: tahoma;
+      font-weight: 300;
+      color: #333;
+      line-height: 1.254;
+      margin: 0;
+      padding: 0;
+    }
+    a{
+      text-decoration: none;
+      color: #3b8bba;
+      transition: all 0.5s;
+    }
+    a:hover,a:visited{
+      color: #265778;
+    }
+    #container{
+      padding-left:10px;
+      position: relative;
+      left: 20px;
+      width: 100%;
+    }
+    #menu{
+      position: fixed;
+      height: 100%;
+      background-color:#CD8500;
+      width: 150px;
+      left: 0; 
+      
+      
+      
+    }
+    /*MENU*/
+    #menu{}
+    #menu ul{
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+
+    }
+    #menu ul li{
+      line-height: 2.9em;
+      height: 2.9em;
+      transition: all 0.5s;
+      position: relative;
+    }
+    #menu ul li a{
+      display: block;
+      color: #fff;
+      padding: 0 1em;
+      border-bottom: 1px solid white;
+    }
+    
+    #menu ul li:hover{
+      background-color: #FFA500;
+      cursor: pointer;
+    }
+  
+    #menu .sub-menu{
+      display: none;
+      position: absolute;
+      top: 0;
+      left: 150px;
+      background-color: #CD8500;
+      width: 200px;
+      padding-left: 0px;
+      color: white;
+      
+    }
+    #menu ul li:hover .sub-menu{
+      display: block;
+
+    }
+  
+    /* content */
+    #content{
+      padding: 10px 7em;
+      margin-left: 30px;
+    }
+    #header,.call-to-action{
+      text-align: left;
+    }
+    /*header*/
+    #header{}
+    #header #logo{}
+    /* row */
+    .row{
+      
+      margin-left: 20px;
+      margin-top: 20px; 
+    }
+    .row .col{
+       float: left;
+      width: 50%;
+      height: auto;
+      padding-right: 20px;
+    }
+    .form .form1{
+      width: 150px;
+      height: 30px;
+    }
+    .responsive {
+    margin: 20px 20px 0 0;
+    float: right;
+    padding: 10px;
+  }
+  .responsive #gallery1 {
+    padding-right: 10px;    
+  }
+    
+  .button {
+      background-color: #4CAF50;
+      border: none;
+      color: white;
+      padding: 5px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 7px 7px 7px 35px;
+      
+      cursor: pointer;
+  }
+  .button2 {
+      background-color: red;
+      border: none;
+      color: white;
+      padding: 5px 2px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 10px 2px 0 20px;
+      cursor: pointer;
+  }
+/*hieu ung phong to*/
+    .container{
+    width: 90%;
+    margin: 350px auto;
+    margin-left: 140px;
+    padding: 50px 50px 50px 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .container2{
+    width: 90%; 
+    margin: 350px auto;
+    margin-top: 0;
+    margin-left: 140px;
+    padding: 50px 50px 50px 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .box{
+    width: 400px;
+    height: 400px;
+    background: orange;
+    margin: 0px 10px;
+    transition: 1s;
+
+  }
+  .box:hover{
+    transform: scale(1.3);
+    
+    
+  }
+  .button {
+      background-color: #4CAF50;
+      border: none;
+      color: white;
+      padding: 10px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 7px 7px 7px 35px;
+      border-radius: 8px;
+      cursor: pointer;
+  }
+ 
+  .button2 {
+      background-color: red;
+      border: none;
+      color: white;
+      padding: 9px 9px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 10px 2px 0 20px;
+      border-radius: 8px;
+      cursor: pointer;
+  }
+  .button:hover{
+     background-color: white;
+    color: black;
+  }
+  .button2:hover{
+     background-color: white;
+    color: black;
+  }
+.footer {
+    background-color:  #4CAF50;
+    padding: 10px;
+    width: 100%;
+    height: 100px;
+    text-align: center;
+}
+  </style>
+</head>
+<body>
+  <div id="container">
+    <div id="menu">
+      <ul>
+
+        <li><a href="#">Trang Chủ</a></li>
+        <li><a href="#">Menu</a>
+            <ul class="sub-menu">
+              <li><a href="#"></a>Pizza</li>
+              <li><a href="#"></a>Drink</li>
+              <li><a href="#"></a>Snack</li>
+            </ul>
+        </li>
+
+        <li><a href="#">Hot</a></li>
+              <ul class="sub-menu">
+                    <li><a href="#"></a>Pizza</li>
+                    <li><a href="#"></a>Drink</li>
+                    <li><a href="#"></a>Snack</li>
+              </ul>
+        <li><a href="#">Giới Thiệu</a></li>
+        <li><a href="#">Liên Hệ</a></li>
+      </ul>
+      <form class="form">
+      <input class="form1" type="search" placeholder="Search" aria-label="Search">
+      <button class="form2" type="submit">Search</button>
+    </form>
+    </div>
+    <div id="content">
+      <div id="header">
+        <div id="logo"> <img src="https://bizweb.dktcdn.net/100/310/257/themes/673736/assets/slider_1.jpg?1537585127278" width="1150x"> </div>
+       
+
+      </div><!--#header-->
+    
+      <div class="row" id="intro">
+          <div id="box1" class="col">
+
+            <img src="https://bizweb.dktcdn.net/100/310/257/themes/673736/assets/banner_box_1.jpg?1537585127278" width="100%" height="auto" >
+          </div>
+         <div id="box2" class="col">
+    
+            <img src="https://bizweb.dktcdn.net/100/310/257/themes/673736/assets/banner_box_1.jpg?1537585127278" width="100%" height="auto"  >
+            
+          </div>
+  
+      </div><!--#row-->
+      
+    </div><!--#content-->  
+  </div><!--#hcontainer-->
+ 
+  <!-- hieu ung phong to-->
+  <div class="container">
+   <div class="box">
+      <a target="_blank" href="img_mountains.jpg">
+         <img src="https://bizweb.dktcdn.net/100/310/257/themes/673736/assets/banner_box_1.jpg?1537585127278" alt="Mountains" width="270" height="300">
+       </a>
+      <div class="desc" >Add a description of the image here Add a description of the image here </div>
+      <button class="button">Mua Hàng </button>
+      <button class="button2">Chi Tiết</button>
+   </div>
+   <div class="box">
+      <a target="_blank" href="img_mountains.jpg">
+         <img src="https://bizweb.dktcdn.net/100/310/257/themes/673736/assets/banner_box_1.jpg?1537585127278" alt="Mountains" width="270" height="300">
+       </a>
+      <div class="desc">Add a description of the image here</div>
+      <button class="button">Mua Hàng </button>
+      <button class="button2">Chi Tiết</button>
+   </div>
+    <div class="box">
+      <a target="_blank" href="img_mountains.jpg">
+         <img src="https://bizweb.dktcdn.net/100/310/257/themes/673736/assets/banner_box_1.jpg?1537585127278" alt="Mountains" width="270" height="300">
+       </a>
+      <div class="desc">Add a description of the image here</div>
+      <button class="button">Mua Hàng </button>
+      <button class="button2">Chi Tiết</button>
+   </div>
+    <div class="box">
+      <a target="_blank" href="img_mountains.jpg">
+         <img src="https://bizweb.dktcdn.net/100/310/257/themes/673736/assets/banner_box_1.jpg?1537585127278" alt="Mountains" width="270" height="300">
+       </a>
+      <div class="desc">Add a description of the image here</div>
+      <button class="button">Mua Hàng </button>
+      <button class="button2">Chi Tiết</button>
+   </div>
+  
+</div>
+<div class="container2">
+   <div class="box">
+      <a target="_blank" href="img_mountains.jpg">
+         <img src="https://bizweb.dktcdn.net/100/310/257/themes/673736/assets/banner_box_1.jpg?1537585127278" alt="Mountains" width="270" height="300">
+       </a>
+      <div class="desc">Add a description of the image here Add a description of the image here </div>
+      <button class="button">Mua Hàng </button>
+      <button class="button2">Chi Tiết</button>
+   </div>
+   <div class="box">
+      <a target="_blank" href="img_mountains.jpg">
+         <img src="https://bizweb.dktcdn.net/100/310/257/themes/673736/assets/banner_box_1.jpg?1537585127278" alt="Mountains" width="270" height="300">
+       </a>
+      <div class="desc">Add a description of the image here</div>
+      <button class="button">Mua Hàng </button>
+      <button class="button2">Chi Tiết</button>
+   </div>
+    <div class="box">
+      <a target="_blank" href="img_mountains.jpg">
+         <img src="https://bizweb.dktcdn.net/100/310/257/themes/673736/assets/banner_box_1.jpg?1537585127278" alt="Mountains" width="270" height="300">
+       </a>
+      <div class="desc">Add a description of the image here</div>
+      <button class="button">Mua Hàng </button>
+      <button class="button2">Chi Tiết</button>
+   </div>
+    <div class="box">
+      <a target="_blank" href="img_mountains.jpg">
+         <img src="https://bizweb.dktcdn.net/100/310/257/themes/673736/assets/banner_box_1.jpg?1537585127278" alt="Mountains" width="270" height="300">
+       </a>
+      <div class="desc">Add a description of the image here</div>
+      <button class="button">Mua Hàng </button>
+      <button class="button2">Chi Tiết</button>
+   </div>
+  
+</div>
+  <div class="footer" style="color: white; ">footer</div>
+</div>
+</body>
+</html>
